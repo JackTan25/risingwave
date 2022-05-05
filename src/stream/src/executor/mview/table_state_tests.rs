@@ -345,6 +345,9 @@ async fn test_state_table_iter() {
         ]),
         res.unwrap()
     );
+
+    let res = iter.next().await.unwrap();
+    assert!(res.is_none());
 }
 
 #[tokio::test]
