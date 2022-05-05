@@ -341,7 +341,7 @@ async fn test_state_table_iter() {
         Row(vec![
             Some(33_i32.into()),
             Some(33_i32.into()),
-            Some(33_i32.into())
+            Some(33.into())
         ]),
         res.unwrap()
     );
